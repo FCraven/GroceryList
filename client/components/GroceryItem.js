@@ -1,12 +1,12 @@
 import React from 'react'
 
-const GroceryItem =(props)=> {
-  return (
-    <div>
-      <h1>GroceryItem</h1>
-    </div>
-  )
-}
+const GroceryItem =({onClick,bought,text})=> (
+  <li onClick={onClick} style={{textDecoration: bought? "line-through" : "none"}}>
+    {text}
+  </li>
+
+)
+
 
 
 export default GroceryItem
