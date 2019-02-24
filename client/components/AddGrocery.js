@@ -25,6 +25,12 @@ class AddGrocery extends Component {
           onChange={evt => this.setState({input: evt.target.value})}
           onKeyDown={this.handleKey} />
 
+
+      <button>RemoveMe</button>
+      <button>Please</button>
+      <button>I am not long for here</button>
+
+
         <button
           onClick={() => {
             this.props.add(this.state.input);
