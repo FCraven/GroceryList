@@ -20,6 +20,11 @@ const reducer = (state = initialState, action) => {
       };
       return { ...state, groceries: [...state.groceries, newGrocery] }
 
+      //feel free to remove
+      case UPDATE_GROCERY:
+      const updatedGrocery = action.text
+      return {...state, groceries: [...state.groceries, updatedGrocery]}
+
     default:
       return state;
   }
